@@ -30,7 +30,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   justify-self: center;
-  grid-template: 60% 40% / 1fr 0.5fr 0.5fr 1fr;
+  grid-template: 60% 40% / 1fr 0.46fr 0.46fr 1fr;
   grid-template-areas:
     'header header ratings ratings'
     'review-1 review-2 review-2 review-3';
@@ -127,7 +127,8 @@ header p {
 .review-2,
 .review-3 {
   display: flex;
-  height: 13rem;
+  height: 92%;
+  width: 99%;
   flex-direction: column;
   justify-content: center;
   padding: 0 1.8rem 0 1.8rem;
@@ -147,17 +148,17 @@ header p {
 }
 .review-header {
   display: flex;
-  margin-bottom: 0.2rem;
+  margin-bottom: -1rem;
   transform: translateX(-1.4rem);
 }
 .review-header img {
   border-radius: 50%;
-  transform: translateY(0rem) scale(0.45);
+  transform: translateY(-1.3rem) scale(0.48);
 }
 .review-name {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-self: flex-start;
 }
 .name {
   color: var(--neutralWhite);
