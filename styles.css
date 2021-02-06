@@ -34,7 +34,7 @@ body {
   grid-template-areas:
     'header header ratings ratings'
     'review-1 review-2 review-2 review-3';
-  gap: 1rem 1.5rem;
+  gap: 1.8rem 1.8rem;
 }
 /* ---------------------------- */
 /* Background Pattern */
@@ -74,18 +74,20 @@ header {
 }
 header h1 {
   color: var(--primaryMagenta);
-  font-size: 2.7rem;
+  font-size: 2.8rem;
   font-weight: 700;
   line-height: 2.8rem;
   margin-bottom: 1rem;
   letter-spacing: -2px;
   padding-right: 5rem;
+  width: 12em;
 }
 header p {
   line-height: 1.4rem;
   padding-right: 5rem;
   font-weight: 400;
   letter-spacing: -0.8px;
+  width: 33em;
 }
 /* ---------------------------- */
 /* Ratings */
