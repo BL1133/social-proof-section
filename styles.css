@@ -14,24 +14,27 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
   font-family: 'Spartan', sans-serif;
-  display: flex;
-  flex-direction: column;
-  place-items: center;
   font-size: 15px;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 .container {
-  width: 80vw;
+  width: 75vw;
   height: 80vh;
   display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-self: center;
   grid-template: 60% 40% / 1fr 0.5fr 0.5fr 1fr;
   grid-template-areas:
     'header header ratings ratings'
     'review-1 review-2 review-2 review-3';
-  gap: 0rem 1.5rem;
-  margin: 10rem;
+  gap: 1rem 1.5rem;
 }
 /* ---------------------------- */
 /* Background Pattern */
@@ -71,9 +74,9 @@ header {
 }
 header h1 {
   color: var(--primaryMagenta);
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
   margin-bottom: 1rem;
   letter-spacing: -2px;
   padding-right: 5rem;
@@ -123,6 +126,7 @@ header p {
 .review-2,
 .review-3 {
   display: flex;
+  height: 13rem;
   flex-direction: column;
   justify-content: center;
   padding: 0 1.8rem 0 1.8rem;
@@ -131,14 +135,14 @@ header p {
 }
 .review-1 {
   grid-area: review-1;
+  transform: translateY(-2rem);
 }
 .review-2 {
   grid-area: review-2;
-  transform: translateY(1rem);
+  transform: translateY(-1rem);
 }
 .review-3 {
   grid-area: review-3;
-  transform: translateY(2rem);
 }
 .review-header {
   display: flex;
@@ -163,6 +167,6 @@ header p {
   font-weight: 400;
 }
 .review-quote {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--neutralWhite);
 }
