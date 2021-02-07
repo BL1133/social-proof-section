@@ -48,12 +48,12 @@ body {
   z-index: -1;
 }
 .bg-desktop-top {
-  transform: translateX(-155%);
+  transform: translateX(2%);
 }
 .bg-desktop-bottom {
-  width: 100vw;
   height: 100vh;
-  transform: translate(10%, 10%) scale(0.8);
+  width: 80vw;
+  transform: translate(26%, 14%);
 }
 @media only screen and (max-width: 375px) {
   .bg-desktop-top,
