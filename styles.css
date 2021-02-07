@@ -34,7 +34,7 @@ body {
   grid-template-areas:
     'header header ratings ratings'
     'review-1 review-2 review-2 review-3';
-  gap: 1.3rem 1.15rem;
+  gap: 3rem 1.15rem;
 }
 /* ---------------------------- */
 /* Background Pattern */
@@ -117,7 +117,7 @@ header p {
 .review-2,
 .review-3 {
   display: flex;
-  height: 90%;
+  height: 14rem;
   width: 97%;
   flex-direction: column;
   justify-content: center;
