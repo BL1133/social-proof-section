@@ -34,7 +34,7 @@ body {
   grid-template-areas:
     'header header ratings ratings'
     'review-1 review-2 review-2 review-3';
-  gap: 1.8rem 1.15rem;
+  gap: 1.3rem 1.15rem;
 }
 /* ---------------------------- */
 /* Background Pattern */
@@ -63,9 +63,9 @@ header {
 }
 header h1 {
   color: var(--primaryMagenta);
-  font-size: 2.8rem;
-  font-weight: 700;
-  line-height: 2.8rem;
+  font-size: 3rem;
+  font-weight: 00;
+  line-height: 3rem;
   margin-bottom: 1rem;
   letter-spacing: -2px;
   padding-right: 5rem;
@@ -117,7 +117,7 @@ header p {
 .review-2,
 .review-3 {
   display: flex;
-  height: 94%;
+  height: 90%;
   width: 97%;
   flex-direction: column;
   justify-content: center;
@@ -283,14 +283,23 @@ header p {
 }
 
 /* Background Pattern */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 606px) {
   .bg-desktop-top,
   .bg-desktop-bottom {
     display: none;
   }
   .bg-mobile-top,
   .bg-mobile-bottom {
+    display: initial;
     position: fixed;
     z-index: -1;
+  }
+  .bg-mobile-top {
+    width: 100vw;
+    transform: translate(-28%);
+  }
+  .bg-mobile-bottom {
+    width: 100vw;
+    transform: translateY(70%);
   }
 }
